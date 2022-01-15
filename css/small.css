@@ -9,28 +9,20 @@ body {
 /* header */
 
 header {
-    display: grid;
-    grid-template-columns: 25% 75%;
-    grid-template-rows: 200px;
-    gap: 20px;
     background-color: #1d6485;
-    border-radius: 25px;
     margin-top: 40px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
 }
 
 header img {
-    width: 75%;
-    justify-self: right;
-    align-self: center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: block;
+    width: 50%;
+    margin: 0 auto;
 }
 
 header h1 {
-    justify-self: center;
-    align-self: center;
+    text-align: center;
     color: white;
-    font-size: 3em;
 }
 
 /* main */
@@ -57,8 +49,6 @@ footer {
 
     margin-top: 40px;
     padding: 10px;
-    border-radius: 25px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 

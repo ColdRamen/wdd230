@@ -1,0 +1,30 @@
+@media only screen and (min-width: 32.5em) {
+    header h1 {
+        justify-self: center;
+        align-self: center;
+        font-size: 3em;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 25% 75%;
+        grid-template-rows: 200px;
+        gap: 20px;
+        border-radius: 25px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    header img {
+        padding: 0;
+        width: 75%;
+        margin: 0;
+        justify-self: right;
+        align-self: center;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    footer {
+        border-radius: 25px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+}
