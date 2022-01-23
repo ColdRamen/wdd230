@@ -1,0 +1,21 @@
+@media only screen and (min-width: 32.5em) {
+    .nav-head {
+        max-width: 960px;
+        margin: 30px auto;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+        line-height: 3em;
+    }
+
+    p {
+        max-width: 40%;
+        margin: 0 auto;
+    }
+
+    ul {
+        max-width: 40%;
+        margin: 30px auto;
+    }
+
+}
