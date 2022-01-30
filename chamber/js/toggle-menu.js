@@ -1,5 +1,5 @@
 function toggleMenu() {
-    document.getElementById("primary-nav").classList.toggle("open");
+    document.getElementById("dropdown-nav").classList.toggle("open");
     document.getElementById("hamburger-btn").classList.toggle("open");
 }
 

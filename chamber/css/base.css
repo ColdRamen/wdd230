@@ -28,6 +28,10 @@ header h1 {
     font-size: .75em;
 }
 
+#primary-nav {
+    display: none;
+}
+
 button#hamburger-btn {
     margin: .2rem 2vw;
     padding-top: 1rem;
@@ -49,7 +53,7 @@ button#hamburger-btn {
     padding: 1rem;
 }
 
-nav ul {
+nav ul#dropdown-nav {
     border-top: 3px solid rgba(0,0,0,0.3);
     font-family: 'Sarabun', sans-serif;
     margin: 0 auto;
@@ -108,6 +112,7 @@ main section section {
 }
 
 #join {display: none;}
+main section section p:nth-of-type(3) {display: none;}
 
 /* FOOTER */
 

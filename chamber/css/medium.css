@@ -1,39 +1,104 @@
-@media only screen and (min-width: 40rem) {
+@media only screen and (min-width: 40em) {
+
+    /* MAIN */
 
     main section {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        margin: 0;
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    main section p {
+        width: 90%;
+        justify-self: center;
+        margin: 1em 0;
     }
 
     #hero {
         grid-row: 1;
-        grid-column: span 4;
+        grid-column: span 6;
     }
     #news {
         grid-row: 2;
-        grid-column: span 4;
+        grid-column: span 6;
     }
     #spotlights {
         grid-row: 3;
-        grid-column: span 4;
+        grid-column: span 6;
     }
 
     #spotlights p {
-        grid-column: span 2;
+        grid-column: span 3;
     }
 
     #join {
         display: block;
         grid-row: 4;
-        grid-column: span 4;
+        grid-column: span 6;
     }
     #event {
+        width: 85%;
+        justify-self: center;
         grid-row: 5;
-        grid-column: 1 / 4;
+        grid-column: 1 / span 4;
     }
     #weather {
+        width: 73%;
         grid-row: 5;
-        grid-column: 4;
+        grid-column: 5 / span 2;
     }
+
+    /* FOOTER */
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr 2fr;
+        grid-template-rows: repeat(4, 60px);
+    }
+
+    footer img#footer-logo {
+        width: 90%;
+        justify-self: center;
+        grid-column: 1;
+        grid-row: 2 / span 2;
+    }
+
+    footer h4 {
+        grid-column: 2;
+        grid-row: 2;
+        text-align: left;
+        align-self: end;
+    }
+
+    footer p.address {
+        margin: 0;
+        margin-top: .2em;
+        text-align: left;
+        grid-column: 2;
+        grid-row: 3;
+    }
+
+    footer p.address:nth-of-type(2) {
+        align-self: center;
+    }
+
+    footer p.contact {
+        margin: 0;
+        grid-column: 4;
+        grid-row: 2;
+    }
+
+    footer p.contact#email {align-self: center;}
+    footer p.contact#phone {align-self: end;}
+
+    footer p#location-map {
+        grid-column: 4;
+        grid-row: 3;
+    }
+
+    footer p#footer-end {
+        grid-row: 4;
+        grid-column: span 4;
+    }
+
+
 }
