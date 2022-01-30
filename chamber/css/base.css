@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Sarabun&display=swap');
+
+/* HEADER */
+
+header {
+    background-color: #284B63;
+    padding-bottom: 10px;
+}
+
+#header-box {
+    display: grid;
+    grid-template-columns: 150px 2fr 50px;
+}
+
+
+#header-logo {
+    width: 100%;
+}
+
+header h1 {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 1.5rem;
+    padding: .75rem .5rem;
+}
+
+#smaller {
+    font-size: .75em;
+}
+
+button#hamburger-btn {
+    margin: .2rem 2vw;
+    padding-top: 1rem;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #fff;
+    justify-self: right;
+    align-self: start;
+}
+
+#current-date {
+    width: 75%;
+    margin: 1rem auto;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    background-color: rgba(0,0,0,0.2);
+    padding: 1rem;
+}
+
+nav ul {
+    border-top: 3px solid rgba(0,0,0,0.3);
+    font-family: 'Sarabun', sans-serif;
+    margin: 0 auto;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 1rem 2vw;
+    text-decoration: none;
+    color: #eee;
+    text-align: center;
+}
+
+nav ul li.active a {
+    background-color: rgba(0,0,0,0.2);
+    color: #fff;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0,0,0,0.3);
+}
+
+nav ul {
+    display: none;
+}
+
+nav ul.open {display: block;}
+
+#hamburger-btn span:nth-child(1){display: block;}
+#hamburger-btn span:nth-child(2) {display: none;}
+
+#hamburger-btn.open span:nth-child(1){display: none;}
+#hamburger-btn.open span:nth-child(2) {display: block;}
+
+/* MAIN */
+
+main p {
+    font-family: 'Sarabun', sans-serif;
+    width: 90%;
+    height: 125px;
+    margin: 1em auto;
+    background-color: #eee;
+    padding: .5em;
+    border: 1px solid rgb(189, 189, 189);
+}
+
+main section section {
+    padding: .5em;
+    margin: .5em auto;
+    width: 90%;
+    background-color: #eee;
+    border: 1px solid rgb(189, 189, 189);
+}
+
+#join {display: none;}
+
+/* FOOTER */
+
+#footer-logo {
+    width: 50%;
+    padding: 0;
+    margin: 0;
+}
+
+footer {
+    margin-top: 3rem;
+    background-color: #D9D9D9;
+    font-family: 'Sarabun', sans-serif;
+    text-align: center;
+}
+
+footer h4 {
+    margin: 0;
+}
+
+footer .address {
+    margin: .2em;
+    font-style: italic;
+}
+
+#footer-end {
+    padding: .75em;
+}
