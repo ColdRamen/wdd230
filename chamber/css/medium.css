@@ -2,12 +2,12 @@
 
     /* MAIN */
 
-    main section {
+    main div {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
     }
 
-    main section p {
+    main div p {
         width: 90%;
         justify-self: center;
         margin: 1em 0;

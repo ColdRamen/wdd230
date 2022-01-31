@@ -25,21 +25,21 @@
 
     /* MAIN */
 
-    main section {
+    main div {
         grid-template-columns: 1fr 2fr 1fr;
         grid-template-rows: repeat(3, 125px);
         padding: 20px 30px;
         gap: 20px;
     }
 
-    main section p {
+    main div p {
         width: 100%;
         height: 100%;
         margin: 0;
         padding: 0;
     }
 
-    main section section {
+    main div div {
         width: 100%;
         height: 100%;
         margin: 0 0;
