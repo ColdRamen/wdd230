@@ -15,6 +15,7 @@
 <body>
     <header>
         <div id="header-box">
+            <button id="hamburger-btn"><span>&#9776;</span><span> X</span></button>
             <img id="header-logo" src="images/logan-city-chamber-logo.png" alt="Logan City Chamber Logo">
             <h1>Logan City <br> <span id="smaller">Chamber of Commerce</span></h1>
             <nav id="primary-nav">
@@ -25,7 +26,10 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
-            <button id="hamburger-btn"><span>&#9776;</span><span> X</span></button>
+            <div id="header-social">
+                <a href="#"><img src="images/facebook-icon.png" alt="Facebook Logo Icon that links to facebook.com"></a>
+                <a href="#"><img src="images/linkedin-icon.png" alt="LinkedIn Logo Icon that links to linkedin.com"></a>
+            </div>
         </div>
         <p id="current-date"></p>
         <nav>
@@ -40,16 +44,38 @@
 
     <main>
         <div>
-            <p id="hero">Hero with site name and call to action</p>
-            <p id="event">Event</p>
-            <p id="weather">Weather</p>
-            <p id="news">News Release</p>
+            <section id="hero">
+                <h2>Welcome to Logan</h2>
+                <button id="hero-join"><strong>Join the Chamber</strong></button>
+            </section>
+            <section id="event">
+                <h3>Ribbon Cutting</h3>
+                <p><strong>Ramen Haus</strong></p>
+                <p>Join us Thursday at 1:00 p.m. for the grand opening. <a href="#">more info</a></p>
+            </section>
+            <section id="weather">
+                <h3>Weather</h3>
+                <img src="images/weather-sunny.png">
+                <p>20°F</p>
+                <p>Partly Cloudy</p>
+                <table>
+                    <tr>
+                        <td>Wind Speed:</td>
+                        <td>2.5 km/h</td>
+                    </tr>
+                    <tr>
+                        <td>Wind Chill:</td>
+                        <td>N/A</td>
+                    </tr>
+                </table>
+            </section>
+            <section id="news">News Release</section>
             <div id="spotlights">
-                <p>Spotlight 1</p>
-                <p>Spotlight 2</p>
-                <p>Spotlight 3</p>
+                <section>Spotlight 1</section>
+                <section>Spotlight 2</section>
+                <section>Spotlight 3</section>
             </div>
-            <p id="join">Join</p>
+            <section id="join">Join</section>
         </div>
     </main>
 
