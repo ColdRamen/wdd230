@@ -14,9 +14,10 @@
 </head>
 <body>
     <header>
+        <span id="event-banner"></span>
         <div id="header-box">
             <button id="hamburger-btn"><span>&#9776;</span><span> X</span></button>
-            <img id="header-logo" src="images/logan-city-chamber-logo.png" alt="Logan City Chamber Logo">
+            <img id="header-logo" src="images/logan-city-chamber-logo-white.png" alt="Logan City Chamber Logo">
             <h1>Logan City <br> <span id="smaller">Chamber of Commerce</span></h1>
             <nav id="primary-nav">
                 <ul>
@@ -48,20 +49,21 @@
                 <h2>Welcome to Logan</h2>
                 <button id="hero-join"><strong>Join the Chamber</strong></button>
             </section>
+            <!-- <div id="event-weather"> -->
             <section id="event">
                 <h3>Ribbon Cutting</h3>
-                <p><strong>Ramen Haus</strong></p>
+                <p><strong>🍜 Ramen Haus 🍜</strong></p>
                 <p>Join us Thursday at 1:00 p.m. for the grand opening. <a href="#">more info</a></p>
             </section>
             <section id="weather">
                 <h3>Weather</h3>
                 <img src="images/weather-sunny.png">
-                <p>20°F</p>
-                <p>Partly Cloudy</p>
+                <p id="temp">20°F</p>
+                <p id="description"><strong>Sunny</strong></p>
                 <table>
                     <tr>
                         <td>Wind Speed:</td>
-                        <td>2.5 km/h</td>
+                        <td>1.5 km/h</td>
                     </tr>
                     <tr>
                         <td>Wind Chill:</td>
@@ -69,30 +71,58 @@
                     </tr>
                 </table>
             </section>
-            <section id="news">News Release</section>
+            <!-- </div> -->
+            <section id="news">
+                <h3>News Release</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                    magna aliqua. Euismod elementum nisi quis eleifend quam adipiscing vitae. Sed tempus urna et pharetra pharetra 
+                    massa massa ultricies. Leo urna molestie at elementum. </p>
+            </section>
             <div id="spotlights">
-                <section>Spotlight 1</section>
-                <section>Spotlight 2</section>
-                <section>Spotlight 3</section>
+                <section id="spotlight-1">
+                    <h3>Mos Eisley Cantina</h3>
+                    <img src="images/cantina.png" alt="Alien Head Logo for Mos Eisley Cantina">
+                    <p>"Refusing service to droids since 25 BBY."</p>
+                    <p class="spotlight-contact" >moseisley@cantina.com <br> 94723498765 | Website</p>
+                </section>
+                <section id="spotlight-2">
+                    <h3>Endor Transportation</h3>
+                    <img src="images/transport.png" alt="Spacecraft Logo for Endor Transportation">
+                    <p>"Faster than you can say 'Punch it!'"</p>
+                    <p class="spotlight-contact" >et@endor.com <br> 9451875.818 | Website</p>
+                </section>
+                <section id="spotlight-3">
+                    <h3>Early Empire Education</h3>
+                    <img src="images/empire.png" alt="Star Wars Empire Logo for Early Empire Education">
+                    <p>"Marching Your Children Into Battle"</p>
+                    <p class="spotlight-contact" >eee@vader.com <br> 0000000001 | Website</p>
+                </section>
             </div>
-            <section id="join">Join</section>
+            <section id="join">
+                <button><strong>Join Us!</strong></button>
+                <p>Discover how to join the chamber of commerce and how it will benefit your organization!</p>
+            </section>
         </div>
     </main>
 
     <footer>
-        <img id="footer-logo" src="images/logan-city-chamber-logo.png" alt="Logan City Chamber Logo">
-        <h4>Logan City Chamber of Commerce</h4>
-        <p class="address">255 W 459 S</p>
-        <p class="address">Logan, UT 84321</p>
-        <p class ="contact" id="email">info@logancitychamber.com</p>
-        <p class="contact" id="phone">(999) 999-9999</p>
-        <p id="location-map">Location Map</p>
-        <p id="footer-end">© <span id="current-year"></span> Logan City Chamber <span class="footer-divider"> | </span> <strong>Alex Ward</strong> | WDD 230 Project | Last updated: <span id="last-modified"></span></p>
+        <div id="footer-box">
+            <img id="footer-logo" src="images/logan-city-chamber-logo-blue.png" alt="Logan City Chamber Logo">
+            <h4>Logan City Chamber of Commerce</h4>
+            <p class="address">255 W 459 S</p>
+            <p class="address">Logan, UT 84321</p>
+            <p class ="contact" id="email">info@logancitychamber.com</p>
+            <p class="contact" id="phone">(999) 999-9999</p>
+            <p id="location-map">Location Map</p>
+            <p id="footer-end">© <span id="current-year"></span> Logan City Chamber <span class="footer-divider"> | </span> <strong>Alex Ward</strong> | WDD 230 Project | Last updated: <span id="last-modified"></span></p>
+        </div>
     </footer>
 
     <script src="js/toggle-menu.js"></script>
     <script src="js/last-modified.js"></script>
     <script src="js/current-year.js"></script>
     <script src="js/current-date.js"></script>
+    <script src="js/banner.js"></script>
 </body>
 </html>

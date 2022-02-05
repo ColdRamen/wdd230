@@ -1,5 +1,11 @@
 @media only screen and (min-width: 40em) {
 
+    /* HEADER */
+
+    #header-box {
+        grid-template-columns: 50px 150px 2fr 100px;
+    }
+
     /* MAIN */
 
     main div {
@@ -7,17 +13,24 @@
         grid-template-columns: repeat(6, 1fr);
     }
 
-    main div p {
-        width: 90%;
-        justify-self: center;
-        margin: 1em 0;
-    }
-
     #hero {
+        background-image: url("../images/city-background-medium.jpg");
+        height: 200px;
         grid-row: 1;
         grid-column: span 6;
     }
+
+    #hero h2 {
+        font-size: 20pt;
+    }
+
+    #hero button {
+        font-size: 14pt;
+        margin-top: 3.5em;
+        margin-left: 65%;
+    }
     #news {
+        height: 175px;
         grid-row: 2;
         grid-column: span 6;
     }
@@ -26,78 +39,112 @@
         grid-column: span 6;
     }
 
-    #spotlights p {
+    #spotlights section {
         grid-column: span 3;
     }
 
     #join {
         display: block;
+        height: 125px;
         grid-row: 4;
         grid-column: span 6;
+        text-align: center;
+        margin: 2em auto;
     }
+
+    #join button {
+        display: block;
+        margin: .5em auto;
+        width: 90%;
+        font-size: 18pt;
+        line-height: 1.75em;
+        font-family: 'Sarabun', sans-serif;
+        color: #284B63;
+        border-radius: 20px;
+        border: none;
+    }
+
+    #join p {
+        margin: 0 auto;
+        width: 80%;
+        font-size: 15pt;
+    }
+
     #event {
-        width: 85%;
-        justify-self: center;
         grid-row: 5;
         grid-column: 1 / span 4;
+        width: 80%;
+        height: 250px;
+        margin: 2vw;
+        margin-left: 1.5em;
     }
     #weather {
-        width: 73%;
-        grid-row: 5;
-        grid-column: 5 / span 2;
+        width: 80%;
+        height: 256px;
+        grid-column: span 2;
+        margin: 2vw;
+        margin-left: 0;
     }
 
     /* FOOTER */
 
-    footer {
+    #footer-box {
         display: grid;
-        grid-template-columns: 1fr 2fr 1fr 2fr;
-        grid-template-rows: repeat(4, 60px);
+        grid-template-columns: 1fr 2fr 2fr;
+        grid-template-rows: repeat(3, 1fr);
     }
 
-    footer img#footer-logo {
-        width: 90%;
+    #footer-box img#footer-logo {
+        width: 70%;
         justify-self: center;
+        align-self: center;
         grid-column: 1;
-        grid-row: 2 / span 2;
+        grid-row: 1 / span 2;
     }
 
-    footer h4 {
+    #footer-box h4 {
         grid-column: 2;
-        grid-row: 2;
+        grid-row: 1;
         text-align: left;
-        align-self: end;
+        align-self: center;
+        font-size: 15pt;
     }
 
-    footer p.address {
+    #footer-box p {
+        font-size: 14pt;
+    }
+
+    #footer-box p.address {
         margin: 0;
         margin-top: .2em;
         text-align: left;
         grid-column: 2;
-        grid-row: 3;
-    }
-
-    footer p.address:nth-of-type(2) {
-        align-self: center;
-    }
-
-    footer p.contact {
-        margin: 0;
-        grid-column: 4;
         grid-row: 2;
     }
 
-    footer p.contact#email {align-self: center;}
-    footer p.contact#phone {align-self: end;}
-
-    footer p#location-map {
-        grid-column: 4;
-        grid-row: 3;
+    #footer-box p.address:nth-of-type(2) {
+        align-self: center;
     }
 
-    footer p#footer-end {
-        grid-row: 4;
-        grid-column: span 4;
+    #footer-box p.contact {
+        margin: 0;
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    #footer-box p.contact#email {align-self: center;}
+    #footer-box p.contact#phone {align-self: end;}
+
+    #footer-box p#location-map {
+        grid-column: 3;
+        grid-row: 2;
+    }
+
+    #footer-box p#footer-end {
+        font-size: 1em;
+        border-top: 1px solid rgba(0,0,0,0.2);
+        grid-row: 3;
+        grid-column: span 3;
     }
 
 
