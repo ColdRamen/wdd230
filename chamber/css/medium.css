@@ -2,8 +2,20 @@
 
     /* HEADER */
 
+    header h1 {
+        font-size: 26pt;
+    }
+
     #header-box {
         grid-template-columns: 50px 150px 2fr 100px;
+    }
+
+    #medium-large {
+        display: inline;
+    }
+
+    #header-social {
+        display: inline;
     }
 
     /* MAIN */
@@ -14,8 +26,10 @@
     }
 
     #hero {
-        background-image: url("../images/city-background-medium.jpg");
-        height: 200px;
+
+
+        /* background-image: url("../images/city-background-medium.jpg"); */
+        /* height: 200px; */
         grid-row: 1;
         grid-column: span 6;
     }
@@ -33,6 +47,7 @@
         height: 175px;
         grid-row: 2;
         grid-column: span 6;
+        font-size: larger;
     }
     #spotlights {
         grid-row: 3;
@@ -84,6 +99,10 @@
         grid-column: span 2;
         margin: 2vw;
         margin-left: 0;
+    }
+
+    #weather img {
+        width: 80px;
     }
 
     /* FOOTER */

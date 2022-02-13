@@ -32,6 +32,7 @@ header {
 header h1 {
     color: #fff;
     font-family: 'Open Sans', sans-serif;
+    font-size: 20pt;
     margin-top: 1.5rem;
     padding: .75rem .5rem;
 }
@@ -40,8 +41,14 @@ header h1 {
     font-size: .6em;
 }
 
+#medium-large {
+    display: none;
+}
+
 #header-social {
     align-self: center;
+    display: flex;
+    flex-direction: column;
 }
 
 #header-social a img {
@@ -129,26 +136,48 @@ main div section, #spotlights section {
 }
 
 #hero {
-    height: 125px;
+    
     border-radius: 0;
     border: none;
-    background-image: url("../images/city-background-small.jpg");
+    /* background-image: url("../images/city-background-small.jpg"); */
+
+    position: relative;
+    padding: 0;
+    width: auto;
+    height: auto;
+    margin: 1em 2em;
 }
 
 #hero h2 {
+
+    position: absolute;
+    bottom: 60px;
+    left: 10px;
+    background-color: #000;
+
+    width: 85%;
     font-size: 1.5em;
     color: #fff;
-    padding-left: 1em;
+    /* padding-left: 1em; */
 }
 
 #hero button {
+
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: .5em;
+
     background-color: #fff;
     color: #284B63;
     border: none;
     border-radius: 10px;
-    padding: 15px;
     margin-left: 55%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#hero picture img {
+    width: 100%;
 }
 
 #hero button:hover {
@@ -168,7 +197,7 @@ main div section, #spotlights section {
 }
 
 #weather {
-    width: 60%;
+    width: 70%;
 }
 
 #weather h3 {
@@ -179,11 +208,11 @@ main div section, #spotlights section {
 }
 
 #weather img {
-    width: 125px;
+    width: 100px;
     float: left;
 }
 
-#weather #temp {
+#weather .temp {
     font-size: 35pt;
     font-style: italic;
     text-align: center;
@@ -206,7 +235,6 @@ main div section, #spotlights section {
 
 #news {
     text-align: center;
-    font-size: larger;
 }
 
 #news h3 {
@@ -236,9 +264,6 @@ main div section, #spotlights section {
     height: 101.5px;
 }
 
-#spotlights p {
-    line-height: 1.4em;
-}
 
 .spotlight-contact {
     padding-top: .25em;
