@@ -117,7 +117,7 @@ nav ul.open {display: block;}
 #hamburger-btn.open span:nth-child(1){display: none;}
 #hamburger-btn.open span:nth-child(2) {display: block;}
 
-/* MAIN */
+/* index.html -- MAIN */
 
 main div section, #spotlights section {
     font-family: 'Sarabun', sans-serif;
@@ -272,6 +272,10 @@ main div section, #spotlights section {
 
 #join {display: none;}
 #spotlight-3 {display: none;}
+
+/* discover.html -- MAIN */
+
+
 
 /* FOOTER */
 
