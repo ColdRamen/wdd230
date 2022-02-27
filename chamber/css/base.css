@@ -275,7 +275,57 @@ main div section, #spotlights section {
 
 /* discover.html -- MAIN */
 
+/* join.html -- MAIN */
 
+#join-form {
+    font-family: 'Sarabun', sans-serif;
+    max-width: 70%;
+    margin: 2em auto;
+}
+
+#join-form label {
+    display: block;
+    padding-top: 1em;
+}
+
+#join-form label input,
+    #join-form label select,
+    #join-form label textarea {
+    display: block;
+    padding: .5em;
+}
+
+#join-form label input {
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+#join-form label input:required {
+    border-left: 5px solid red;
+}
+
+#join-form label input:required:valid {
+    border-left: 5px solid rgb(0, 179, 0);
+}
+
+#join-form button {
+    margin-top: 2em;
+    padding: .75em;
+    border-radius: 20px;
+}
+
+/* thankyou.html MAIN */
+
+#thank-you {
+    margin: 2em auto;
+    max-width: 50%;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24pt;
+    padding: 2em;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 10px 20px 29px 10px;
+}
 
 /* FOOTER */
 
