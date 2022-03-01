@@ -275,6 +275,29 @@ main div section, #spotlights section {
 
 /* discover.html -- MAIN */
 
+main figure img[data-src] {
+    filter: blur(0.2em);
+}
+
+main figure img {
+    display: block;
+    margin: 3em auto;
+    margin-bottom: .5em;
+    max-width: 90%;
+    filter: blur(0em);
+    transition: filter 1s;
+}
+
+main figure img:hover {
+    box-shadow: rgba(50, 50, 93, 0.5) 0px 17px 30px -8px, rgba(0, 0, 0, 0.3) 0px 11px 19px -11px;
+}
+
+main figure figcaption {
+    text-align: center;
+    font-family: 'Sarabun', sans-serif;
+    font-style: italic;
+}
+
 /* join.html -- MAIN */
 
 #join-form {

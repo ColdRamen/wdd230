@@ -46,7 +46,7 @@
 
 
 
-    /* MAIN */
+    /* index.html MAIN */
 
     main div {
         max-width: 1150px;
@@ -171,6 +171,19 @@
         grid-row: 3;
         height: 100%;
         margin: 0;
+    }
+
+    /* discover.html --MAIN */
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    main p {
+        grid-column: span 2;
+        font-size: x-large;
+        text-align: center;
     }
 
     /* FOOTER */
