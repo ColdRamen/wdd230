@@ -304,11 +304,21 @@ main figure figcaption {
     font-family: 'Sarabun', sans-serif;
     max-width: 70%;
     margin: 2em auto;
+    padding: 1em;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+fieldset {
+    border: none;
 }
 
 #join-form label {
     display: block;
     padding-top: 1em;
+}
+
+#join-form legend {
+    font-size: 15pt;
 }
 
 #join-form label input,

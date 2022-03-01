@@ -175,15 +175,25 @@
 
     /* discover.html --MAIN */
 
-    main {
+    #discover-main {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 
-    main p {
+    #discover-main p {
         grid-column: span 2;
         font-size: x-large;
         text-align: center;
+    }
+
+    /* join.html --MAIN */
+
+    #join-form {
+        width: 40%;
+    }
+
+    #join-form input {
+        width: 50%;
     }
 
     /* FOOTER */
