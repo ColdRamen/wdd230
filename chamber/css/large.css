@@ -18,7 +18,7 @@
     }
 
     #current-date {
-        max-width: 1200px;
+        max-width: 1100px;
     }
 
     #primary-nav {
@@ -194,6 +194,17 @@
 
     #join-form input {
         width: 50%;
+    }
+
+    /* directory.html MAIN */
+
+    #directory-cards {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    #directory-buttons {
+        width: 7%;
     }
 
     /* FOOTER */

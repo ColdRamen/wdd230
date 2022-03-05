@@ -1,0 +1,88 @@
+{
+    "businesses": [
+        {
+            "name": "Chorus Harmony",
+            "address": "546 W That Street Logan UT 84321",
+            "phone": "(435) 512-0000",
+            "website": "https://chorusharmony.org",
+            "logo": "images/chorus-harmony.png"
+        },
+        {
+            "name": "Jealous Formation",
+            "address": "94 S Variety Avenue Logan UT 84321",
+            "phone": "(435) 720-0000",
+            "website": "https://jealousformation.com",
+            "logo": "images/jealous-formation.jpeg"
+        },
+        {
+            "name": "Aloof Soldiers",
+            "address": "11 S Strange Road Logan UT 84321",
+            "phone": "(435) 800-0000",
+            "website": "https://aloofsoldiers.com",
+            "logo": "images/aloof-soldiers.jpeg"
+        },
+        {
+            "name": "Young Peace",
+            "address": "200 B Error Street Logan UT 84321",
+            "phone": "(435) 903-0000",
+            "website": "https://youngpeace.org",
+            "logo": "images/young-peace.jpeg"
+        },
+        {
+            "name": "Memorial Service",
+            "address": "8 W Acceptance Street Logan UT 84321",
+            "phone": "(435) 711-0000",
+            "website": "https://memorialservice.com",
+            "logo": "images/memorial-service.jpeg"
+        },
+        {
+            "name": "Shy Drama",
+            "address": "62 E Career Street Logan UT 84321",
+            "phone": "(435) 785-0000",
+            "website": "https://shydrama.org",
+            "logo": "images/shy-drama.jpeg"
+        },
+        {
+            "name": "Weak Impact",
+            "address": "1 E Country Road Logan UT 84321",
+            "phone": "(435) 123-0000",
+            "website": "https://weakimpact.gov",
+            "logo": "images/weak-impact.jpeg"
+        },
+        {
+            "name": "Lie Island",
+            "address": "5 S Shelf Street Logan UT 84321",
+            "phone": "(435) 010-0000",
+            "website": "https://lieisland.com",
+            "logo": "images/lie-island.jpeg"
+        },
+        {
+            "name": "Comedy Demonstration",
+            "address": "403 E Feautre Street Logan UT 84321",
+            "phone": "(435) 512-0000",
+            "website": "https://comedydemo.com",
+            "logo": "images/comedy-demonstration.jpeg"
+        },
+        {
+            "name": "Abstract Item",
+            "address": "33 N Abridge Avenue Logan UT 84321",
+            "phone": "(435) 989-0000",
+            "website": "https://abstractitem.com",
+            "logo": "images/abstract-item.jpeg"
+        },
+        {
+            "name": "Notorious Magazine",
+            "address": "45 N Button Road Logan UT 84321",
+            "phone": "(435) 898-0000",
+            "website": "https://notoriousmagazine.com",
+            "logo": "images/notorious-magazine.jpeg"
+        },
+        {
+            "name": "Appetite Burn",
+            "address": "89 W Appearance Street Logan UT 84321",
+            "phone": "(435) 001-0000",
+            "website": "https://appetiteburn.com",
+            "logo": "images/appetite-burn.jpeg"
+        }
+    ]
+}

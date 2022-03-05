@@ -105,6 +105,18 @@
         width: 80px;
     }
 
+    /* directory.html MAIN */
+
+    #directory-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+
+    #directory-buttons {
+        width: 20%;
+    }
+
     /* FOOTER */
 
     #footer-box {

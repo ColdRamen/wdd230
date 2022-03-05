@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discover | Logan Chamber of Commerce</title>
-
+    <meta name="description" content="Welcome to Logan City's Chamber of Commerce. We bring local businesses together, that way we grow together.">
+    <title>Logan City Chamber of Commerce | Home</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
 </head>
 <body>
-
     <header>
         <!--    Banner for events      -->
         <span id="event-banner"></span>
@@ -43,46 +44,16 @@
         </nav>
     </header>
 
-    <main id="discover-main">
-        <figure>
-            <img src="images/placeholder.jpg" data-src="images/discover-1.jpg" alt="Cityscape">
-            <figcaption>Stars over the city skyline</figcaption>
-        </figure>
-        <figure>
-            <img src="images/placeholder.jpg" data-src="images/discover-2.jpg" alt="Cityscape">
-            <figcaption>Interstate intersection from above</figcaption>
-        </figure>
-        <figure>
-            <img src="images/placeholder.jpg" data-src="images/discover-3.jpg" alt="Cityscape">
-            <figcaption>Boat on the water</figcaption>
-        </figure>
-        <figure>
-            <img src="images/placeholder.jpg" data-src="images/discover-4.jpg" alt="Cityscape">
-            <figcaption>Cloudy day in the city</figcaption>
-        </figure>
-        <figure>
-            <img src="images/placeholder.jpg" data-src="images/discover-5.jpg" alt="Cityscape">
-            <figcaption>Many skyscapers in black and white</figcaption>
-        </figure>
-        <figure>
-            <img src="images/placeholder.jpg" data-src="images/discover-6.jpg" alt="Cityscape">
-            <figcaption>A local bakery school</figcaption>
-        </figure>
-        <figure>
-            <img src="images/placeholder.jpg" data-src="images/discover-7.jpg" alt="Cityscape">
-            <figcaption>Someone crossing the street</figcaption>
-        </figure>
-        <figure>
-            <img src="images/placeholder.jpg" data-src="images/discover-8.jpg" alt="Cityscape">
-            <figcaption>Church building from far away</figcaption>
-        </figure>
-        <figure>
-            <img src="images/placeholder.jpg" data-src="images/discover-9.jpg" alt="Cityscape">
-            <figcaption>Skyscrapers surrounding the bay</figcaption>
-        </figure>
-
-        <p>There have been <span id="days-since-visited"></span> days since your last visit to this page.</p>
-    </main> 
+    <main id="directory-main">
+        <!-- FOCUS ON CARDS, LEAVE LIST VIEW FOR LATER -->
+        <h2>Business Directory</h2>
+        <div id="directory-buttons">
+            <button id="grid-btn"><img src="images/grid-icon.png"></button>
+            <button id="list-btn"><img src="images/list-icon.png"></button>
+        </div>
+        <div id="directory-cards"></div>
+        <div id="directory-list"></div>
+    </main>
 
     <footer>
         <div id="footer-box">
@@ -97,10 +68,12 @@
         </div>
     </footer>
 
-    <script src="js/days-since-visited.js" defer></script>
-    <script src="js/last-modified.js" defer></script>
-    <script src="js/current-year.js" defer></script>
-    <script src="js/current-date.js" defer></script>
-    <script src="js/lazyload.js"></script>
+    <script src="js/toggle-menu.js"></script>
+    <script src="js/last-modified.js"></script>
+    <script src="js/current-year.js"></script>
+    <script src="js/current-date.js"></script>
+    <script src="js/banner.js"></script>
+    <script src="js/directory.js"></script>
+    <script src="js/directory-toggle.js"></script>
 </body>
 </html>

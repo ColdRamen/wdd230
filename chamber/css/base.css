@@ -360,6 +360,67 @@ fieldset {
     box-shadow: rgba(100, 100, 111, 0.2) 10px 20px 29px 10px;
 }
 
+/* directory.html MAIN */
+
+#directory-main h2 {
+    font-family: 'Open Sans', sans-serif;
+    margin: 1em auto;
+    text-align: center;
+}
+
+#directory-buttons {
+    display: flex;
+    margin: 0 auto;
+    width: 40%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#directory-buttons button {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#directory-buttons button:active {
+    background-color: rgb(245, 245, 245);
+}
+
+#directory-cards {
+    margin-top: 3em;
+}
+
+#directory-cards section {
+    background-color: white;
+    width: 90%;
+    height: auto;
+    padding: 0;
+}
+
+#directory-cards section img {
+    display: block;
+    width: 40%;
+    margin: 0 auto;
+    padding-top: .75em;
+}
+
+#directory-cards section p {
+    color: black;
+    text-align: center;
+    margin: .5em;
+}
+
+#directory-cards section a {
+    color: black;
+    display: block;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+#directory-list {
+    display: none;
+}
+
 /* FOOTER */
 
 #footer-logo {
