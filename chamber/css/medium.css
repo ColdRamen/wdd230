@@ -117,6 +117,29 @@
         width: 20%;
     }
 
+    #directory-list {
+        display: block;
+    }
+
+    #directory-list section {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #directory-list section p {
+        padding: .5em;
+    }
+
+    
+    #directory-list section p:nth-child(2) {
+        align-self: stretch;
+    }
+
+    #directory-list a {
+        display: block;
+        align-self: center;
+    }
+
     /* FOOTER */
 
     #footer-box {

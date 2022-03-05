@@ -207,6 +207,14 @@
         width: 7%;
     }
 
+    #directory-cards.hidden, #directory-list.hidden {
+        display: none;
+    }
+
+    #directory-list section {
+        justify-content: space-evenly;
+    }
+
     /* FOOTER */
 
     #footer-box {
