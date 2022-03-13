@@ -1,4 +1,4 @@
-const apiURL = "http://api.openweathermap.org/data/2.5/weather?q=Logan&units=imperial&appid=fdd7d38ab3c595f56e1bca0e12fb82ef";
+const apiURL = "https://api.openweathermap.org/data/2.5/weather?q=Logan&units=imperial&appid=fdd7d38ab3c595f56e1bca0e12fb82ef";
 let windChill = 0;
 
 fetch(apiURL)
