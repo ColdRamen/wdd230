@@ -47,11 +47,11 @@
     <main>
         <div>
             <section id="hero">
-                <picture>
+                <!-- <picture>
                     <source srcset="images/background-medium.jpg" media="(min-width: 40em) and (max-width: 56.9em)">
                     <source srcset="images/background-large.jpg" media="(min-width: 57em)">
                     <img src="images/background-small.jpg" alt="Three people meeting together">
-                </picture>
+                </picture> -->
                 <h2>Welcome to Logan</h2>
                 <button id="hero-join"><strong>Join the Chamber</strong></button>
             </section>
@@ -63,17 +63,17 @@
             </section>
             <section id="weather">
                 <h3>Weather</h3>
-                <img src="images/weather-sunny.png" alt="sunny weather icon">
+                <img id="weather-icon" src="" alt="">
                 <p class="temp"><span id="temp">0</span>°F</p>
-                <p id="description"><strong>Sunny</strong></p>
+                <p><span id="description"></span></p>
                 <table>
                     <tr>
                         <td>Wind Speed:</td>
-                        <td><span id="wind-speed">6</span> mph</td>
+                        <td><span id="wind-speed"></span> mph</td>
                     </tr>
                     <tr>
                         <td>Wind Chill:</td>
-                        <td><span id="wind-chill"></span>°F</td>
+                        <td><span id="wind-chill"></span></td>
                     </tr>
                 </table>
             </section>
@@ -121,6 +121,7 @@
             <p class ="contact" id="email">info@logancitychamber.com</p>
             <p class="contact" id="phone">(999) 999-9999</p>
             <p id="location-map">Location Map</p>
+            <p id="weather-credit">Weather data attributed to: <a href="https://openweathermap.org">OpenWeather</a></p>
             <p id="footer-end">© <span id="current-year"></span> Logan City Chamber <span class="footer-divider"> | </span> <strong>Alex Ward</strong> | WDD 230 Project | Last updated: <span id="last-modified"></span></p>
         </div>
     </footer>
@@ -131,5 +132,6 @@
     <script src="js/current-year.js"></script>
     <script src="js/current-date.js"></script>
     <script src="js/banner.js"></script>
+    <script src="js/weather-api.js"></script>
 </body>
 </html>

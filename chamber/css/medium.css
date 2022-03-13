@@ -28,7 +28,7 @@
     #hero {
 
 
-        /* background-image: url("../images/city-background-medium.jpg"); */
+        background-image: url("../images/city-background-medium.jpg");
         /* height: 200px; */
         grid-row: 1;
         grid-column: span 6;
@@ -194,10 +194,16 @@
         grid-row: 2;
     }
 
+    #footer-box p#weather-credit {
+        grid-row: 3;
+        grid-column: span 3;
+        font-size: 1.1em;
+    }
+
     #footer-box p#footer-end {
         font-size: 1em;
         border-top: 1px solid rgba(0,0,0,0.2);
-        grid-row: 3;
+        grid-row: 4;
         grid-column: span 3;
     }
 

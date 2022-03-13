@@ -98,7 +98,7 @@
     }
 
     #hero {
-        /* background-image: url("../images/city-background-large.jpg"); */
+        background-image: url("../images/city-background-large.jpg");
         height: 100%;
         grid-column: 2;
         grid-row: 1/3;
@@ -106,12 +106,13 @@
     }
 
     #hero button {
-        font-size: 15pt;
-        /* margin-top: 70%;
-        margin-left: 55%; */
+        font-size: 17pt;
+        margin-top: 70%;
+        margin-left: 55%;
     }
 
     #hero h2 {
+        padding-left: 1em;
         font-size: 25pt;
     }
 
