@@ -189,13 +189,67 @@
 
     /* join.html --MAIN */
 
+    #join-main {
+        margin: 1em auto;
+        max-width: 70%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
     #join-form {
-        width: 40%;
+        width: 80%;
     }
 
     #join-form input {
-        width: 50%;
+        width: 70%;
     }
+
+    #join-form input.membership {
+        width: auto;
+    }
+
+    #join-form textarea {
+        min-width: 70%;
+    }
+
+    #benefits {
+        display: block;
+        width: 80%;
+    }
+
+    #benefits h2 {
+        width: 50%;
+        margin: 1em auto;
+        padding: .5em;
+        font-family: 'Open Sans', sans-serif;
+        text-align: center;
+        border-bottom: 4px solid black;
+    }
+
+    #benefits section {
+        background-color: white;
+        color: black;
+        height: auto;
+        padding: 1em;
+        margin-bottom: 1em;
+    }
+
+    #benefits section:nth-of-type(1) {
+        background-color: rgb(151, 201, 235);
+    }
+
+    #benefits section:nth-of-type(2) {
+        background-color: rgb(219, 192, 161);
+    }
+
+    #benefits section:nth-of-type(3) {
+        background-color: rgb(226, 226, 226);
+    }
+
+    #benefits section:nth-of-type(4) {
+        background-color: rgb(245, 216, 138);
+    }
+    
 
     /* directory.html MAIN */
 
