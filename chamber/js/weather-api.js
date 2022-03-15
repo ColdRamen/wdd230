@@ -4,7 +4,7 @@ let windChill = 0;
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    console.log(jsObject);
+    // console.log(jsObject);
     let temp = Math.round(jsObject.main.temp);
     document.querySelector('#temp').textContent = temp;
     const iconsrc= `https://openweathermap.org/img/wn/${jsObject.weather[0].icon}@2x.png`;

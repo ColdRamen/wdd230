@@ -82,6 +82,7 @@ button#hamburger-btn {
 nav ul#dropdown-nav {
     border-top: 3px solid rgba(0,0,0,0.3);
     font-family: 'Sarabun', sans-serif;
+    font-size: 18pt;
     margin: 0 auto;
     list-style-type: none;
     padding: 0;
@@ -255,6 +256,10 @@ main div section, #spotlights section {
     margin-top: .25em;
     margin-bottom: .5em;
     font-size: 18pt;
+}
+
+#spotlights a {
+    color: white;
 }
 
 #spotlight-1 img {
@@ -451,6 +456,72 @@ fieldset {
 
 #directory-cards.hidden, #directory-list.hidden, .hidden-text {
     display: none;
+}
+
+/* contact.html --MAIN */
+
+#contact-form-box {
+    margin: 2em auto;
+    width: 75%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    padding: 2em;
+}
+
+#contact-form-box h2 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#contact-form, #contact-form-box p {
+    font-family: 'Sarabun', sans-serif;
+}
+
+#contact-form-box p {
+    font-style: italic;
+}
+
+#contact-form label input, #contact-form label textarea {
+    display: block;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: .5em;
+    margin: 1em 0;
+}
+
+#contact-form label input:required, #contact-form textarea:required {
+    border-left: 5px solid red;
+}
+
+#contact-form label input:required:valid, #contact-form textarea:required:valid {
+    border-left: 5px solid rgb(0, 179, 0);
+}
+
+#contact-button {
+    width: 140px;
+    margin-top: 1em;
+    padding: .5em;
+    border-radius: 20px;
+    background-color: white;
+    font-family: 'Sarabun', sans-serif;
+}
+
+#contact-info {
+    width: 80%;
+    margin: 1em auto;
+    padding: 1em;
+    text-align: center;
+}
+
+#contact-info img {
+    width: 100%;
+}
+
+#contact-info h2, #contact-info h3 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#contact-info p, #contact-info a {
+    font-family: 'Sarabun';
+    font-size: 13pt;
 }
 
 /* FOOTER */

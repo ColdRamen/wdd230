@@ -270,12 +270,22 @@
         justify-content: space-evenly;
     }
 
+    /* contact.html --MAIN */
+
+    #contact-main {
+        margin: 0 auto;
+        max-width: 90%;
+    }
+
+    #contact-form-box {
+        width: 50%;
+    }
+
     /* FOOTER */
 
     #footer-box {
         max-width: 960px;
         margin: 0 auto;
-        margin-top: 1.5em;
         grid-template-columns: 1fr 2fr 2fr;
     }
 
