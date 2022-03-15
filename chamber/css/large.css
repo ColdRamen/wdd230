@@ -237,6 +237,10 @@
     #benefits section:nth-of-type(4) {
         background-color: rgb(245, 216, 138);
     }
+
+    #benefits section li {
+        font-size: 13pt;
+    }
     
 
     /* directory.html MAIN */

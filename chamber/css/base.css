@@ -97,7 +97,7 @@ nav ul li a {
     text-align: center;
 }
 
-nav ul li.active a {
+nav ul li a.active {
     background-color: rgba(0,0,0,0.2);
     color: #fff;
 }
@@ -237,6 +237,7 @@ main div section, #spotlights section {
 
 #news {
     text-align: center;
+    font-size: 15pt;
 }
 
 #news h3 {
