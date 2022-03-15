@@ -262,12 +262,8 @@ main div section, #spotlights section {
     color: white;
 }
 
-#spotlight-1 img {
-    width: 75px;
-}
-
-#spotlight-2 img {
-    height: 101.5px;
+#spotlights img {
+    width: 100px;
 }
 
 

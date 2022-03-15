@@ -53,6 +53,7 @@
         grid-column: span 6;
         font-size: larger;
     }
+    
     #spotlights {
         grid-row: 3;
         grid-column: span 6;
