@@ -493,12 +493,15 @@ fieldset {
 }
 
 #contact-button {
-    width: 140px;
+    width: 160px;
     margin-top: 1em;
     padding: .5em;
     border-radius: 20px;
-    background-color: white;
+    background-color: #284B63;
+    color: white;
+    border: none;
     font-family: 'Sarabun', sans-serif;
+    font-size: 14pt;
 }
 
 #contact-info {
