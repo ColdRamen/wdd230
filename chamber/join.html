@@ -29,8 +29,8 @@
                 </ul>
             </nav>
             <div id="header-social">
-                <a href="#"><img src="images/facebook-icon.png" alt="Facebook Logo Icon that links to facebook.com"></a>
-                <a href="#"><img src="images/linkedin-icon.png" alt="LinkedIn Logo Icon that links to linkedin.com"></a>
+                <a href="https://www.facebook.com" target="blank"><img src="images/facebook-icon.webp" alt="Facebook Logo Icon that links to facebook.com"></a>
+                <a href="https://www.linkedin.com" target="blank"><img src="images/linkedin-icon.webp" alt="LinkedIn Logo Icon that links to linkedin.com"></a>
             </div>
         </div>
         <p id="current-date"></p>
@@ -55,14 +55,10 @@
                 <label>Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
                 <label>Business Name <input type="text" name="businessName" required></label>
                 <label class="membership">Membership Level</label>
-                    <input type="radio" class="membership" name="membership" value="non-profit">
-                    <label for="non-profit" class="membership-label">Non-Profit Membership</label><br>
-                    <input type="radio" class="membership" name="membership" value="bronze">
-                    <label for="bronze" class="membership-label">Bronze Membership</label><br>
-                    <input type="radio" class="membership" name="membership" value="silver">
-                    <label for="silver" class="membership-label">Silver Membership</label><br>
-                    <input type="radio" class="membership" name="membership" value="gold">
-                    <label for="gold" class="membership-label">Gold Membership</label><br>
+                    <label class="membership-label"><input type="radio" class="membership" name="membership" value="non-profit">Non-Profit Membership</label><br>
+                    <label class="membership-label"><input type="radio" class="membership" name="membership" value="bronze">Bronze Membership</label><br>
+                    <label class="membership-label"><input type="radio" class="membership" name="membership" value="silver">Silver Membership</label><br>
+                    <label class="membership-label"><input type="radio" class="membership" name="membership" value="gold">Gold Membership</label><br>
                 <label>Business Description <textarea name="description"></textarea></label>
                 <span hidden id="date-and-time"></span>
                 <button type="submit">Join the Chamber</button>
@@ -111,7 +107,7 @@
             <p class="address">Logan, UT 84321</p>
             <p class ="contact" id="email">info@logancitychamber.com</p>
             <p class="contact" id="phone">(999) 999-9999</p>
-            <p id="location-map">Location Map</p>
+            <p id="location-map">📍 <a href="contact.html">Location Map</a></p>
             <p id="footer-end">© <span id="current-year"></span> Logan City Chamber <span class="footer-divider"> | </span> <strong>Alex Ward</strong> | WDD 230 Project | Last updated: <span id="last-modified"></span></p>
         </div>
     </footer>

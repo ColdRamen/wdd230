@@ -140,7 +140,7 @@ main div section, #spotlights section {
     
     border-radius: 0;
     border: none;
-    background-image: url("../images/city-background-small.jpg");
+    background-image: url("../images/city-background-small.webp");
 
     /* position: relative;
     padding: 0; */
@@ -344,8 +344,14 @@ fieldset {
     border-left: 5px solid rgb(0, 179, 0);
 }
 
-#join-form .membership-label {
+#join-form .membership-label input {
     display: inline;
+    margin-right: .3em;
+}
+
+#join-form label.membership-label {
+    display: inline;
+    margin: .5em;
     line-height: 2em;
 }
 

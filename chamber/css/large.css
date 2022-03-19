@@ -86,7 +86,7 @@
     }
 
     #hero {
-        background-image: url("../images/city-background-large.jpg");
+        background-image: url("../images/city-background-large.webp");
         height: 100%;
         grid-column: 2;
         grid-row: 1/3;
