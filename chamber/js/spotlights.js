@@ -8,8 +8,6 @@ fetch(requestURL)
         return response.json();
     })
     .then(function (jsonObject) {
-        console.log(jsonObject);
-
         const businesses = jsonObject['businesses'];
 
         businesses.forEach(displaySpotlights);
@@ -19,13 +17,10 @@ function displaySpotlights(business) {
 
     let membership = business.membership;
     let randInt = getRndInteger(0, 30);
-
-    console.log(randInt);
     
     if (spotlightID < 4 && (membership === "Silver" || membership === "Gold")) {
         if (randInt % 2 === 0) {
-
-            console.log(randInt);
+            
             let section = document.createElement('section');
             let h3 = document.createElement('h3');
             let logo = document.createElement('img');
