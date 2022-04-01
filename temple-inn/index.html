@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Temple Inn & Suites">
+    <title>Home  | The Temple Inn & Suites</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body id="home-body">
+    <header>
+        <div id="header-box">
+            <button id="hamburger-btn"><span>&#9776;</span><span> X</span></button>
+            <nav id="primary-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="temples.html">Temples</a></li> 
+                    <li><a href="services.html">Services</a></li>
+                </ul>
+            </nav>
+            <a id="primary-logo" href="index.html"><img src="images/logo-color.webp" alt="The Temple Inn and Suites logo"></a>
+            <div id="primary-social">
+                <a href="https://instagram.com"><img src="images/instagram-icon-black.webp" alt="instagram logo linked to instagram"></a>
+                <a href="https://facebook.com"><img src="images/facebook-icon-black.webp" alt="facebook logo linked to facebook"></a>
+            </div>
+            <button onclick="window.location.href='reserve.html';" id="primary-reserve-btn">Make a Reservation</button>
+        </div>
+        <nav id="dropdown-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="temples.html">Temples</a></li> 
+                <li><a href="services.html">Services</a></li>
+            </ul>
+            
+            <div id="dropdown-social">
+                <a href="https://instagram.com"><img src="images/instagram-icon-black.webp" alt="instagram logo linked to instagram"></a>
+                <a href="https://facebook.com"><img src="images/facebook-icon-black.webp" alt="facebook logo linked to facebook"></a>
+            </div>
+        </nav>
+        
+    </header>
+
+    <main id="home-main">
+        <div id="home-slideshow-box">
+            <div class="home-slide-wrapper">
+
+                <div class="home-slide">
+                    <picture>
+                        <source media="(min-width: 40em)" srcset="images/hotel-lobby-large.webp">
+                        <img src="images/hotel-lobby-small.webp" alt="Image of a simple hotel room">
+                    </picture> 
+                </div>
+
+                <div class="home-slide">
+                    <picture>
+                        <source media="(min-width: 40em)" srcset="images/slideshow-temple-nauvoo-large.webp">
+                        <img src="images/hotel-room-small.webp" alt="Image of a simple hotel room">
+                    </picture> 
+                </div>
+
+                <div class="home-slide">
+                    <picture>
+                        <source media="(min-width: 40em)" srcset="images/hotel-room-medium.webp">
+                        <img src="images/hotel-room-small.webp" alt="Image of a simple hotel room">
+                    </picture>
+                </div>
+
+                <div class="home-slide">
+                    <picture>
+                        <source media="(min-width: 40em)" srcset="images/slideshow-temple-philadelphia-large.webp">
+                        <img src="images/hotel-room-small.webp" alt="Image of a simple hotel room">
+                    </picture>
+                </div>
+            </div>
+
+            <h2>Enhance your spiritual experience with us.<button onclick="window.location.href='reserve.html';" id="small-reserve-btn">Make a Reservation</button></h2>
+        </div>
+
+        <div id="home-main-grid">
+            <section id="home-spotlight-box">
+                <h3>Temple Spotlight</h3>
+
+                <picture>
+                    <source media="(min-width: 40em)" srcset="images/san-diego-temple-large.webp">
+                    <source media="(min-width: 30em)" srcset="images/san-diego-temple-medium.webp">
+                    <img id="home-spotlight-img" src="images/san-diego-temple-small.webp" alt="Image of the San Diego Temple" loading="lazy">
+                </picture>
+
+                <p>
+                    The beautiful San Diego Temple was dedicated in April 1993 by Gordon B. Hinckley. Latter-day Saints in the San Diego area and northwestern Mexico attend this temple. 
+                </p>
+            </section>
+
+            <picture id="home-services-picture">
+                <source media="(min-width: 57em)" srcset="images/reception-hall-large.webp">
+                <source media="(min-width: 40em)" srcset="images/reception-hall-medium.webp">
+                <img id="home-services-img" src="images/reception-hall-small.webp" alt="Image depicting the hotel's reception hall">
+            </picture>
+
+            <section id="home-services-box">
+                <h3>Our Specialized Services</h3>
+                <ul>
+                    <li>Spacious wedding reception hall</li>
+                    <li>Long term kitchenette suites for full-time temple missionaries</li>
+                    <li>Playroom and low-cost, short-term babysitting services for children of temple patrons</li>
+                    <li>Visitors area unique to each temple</li>
+                </ul>
+                <button>See more</button>
+            </section>
+
+            <picture>
+                <source media="(min-width: 57em)" srcset="images/washington-dc-temple-large.webp">
+                <source media="(min-width: 40em)" srcset="images/washington-dc-temple-medium.webp">
+                <img id="home-temple-img" src="images/washington-dc-temple-small.webp" alt="Image of the Washington D.C. Temple">
+            </picture>
+
+
+            <section id="home-temple-box">
+                <h3>Locations and Temples</h3>
+                <p>
+                    We have locations near four temples (for now!): Washington D.C., MD; San Diego, CA; Philadelphia, PA; and Nauvoo, IL. Do you have questions about
+                    temples? Are you wondering why they are so important to Latter-day Saints? We can help you find answers.
+                </p>
+                <button onclick="window.location.href='temples.html';">Learn more</button>
+            </section>
+        </div>
+        
+
+        <div id="home-weather">
+            <section id="current-weather-box">
+                <h3>Current Weather</h3>
+                <img id="current-weather-icon" src="https://via.placeholder.com/75" alt="">
+                <p id="current-weather-desc"></p>
+                <p id="current-weather-temp"></p>
+            </section>
+
+            <section id="forecast-box">
+                <h3>3-Day Forecast</h3>
+                <p><span id="one-day"></span><br><span id="one-day-temp"></span></p>
+                <p><span id="two-days"></span><br><span id="two-days-temp"></span></p>
+                <p><span id="three-days"></span><br><span id="three-days-temp"></span></p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <img id="footer-logo" src="images/logo-white.webp" alt="Logo for the Temple Inn & Suites">
+        <div id="footer-social">
+            <a href="https://instagram.com"><img src="images/instagram-icon-white.webp" alt="instagram logo linked to instagram"></a>
+            <a href="https://facebook.com"><img src="images/facebook-icon-white.webp" alt="facebook logo linked to facebook"></a>
+        </div>
+        <div id="footer-contact">
+            <p id="footer-phone">(800) 555-555</p>
+            <p id="footer-email">thetempleinn@templeinn.com</p>
+        </div>
+        <div id="footer-address">
+            <p>4800 Montgomery Ln #300<br>Bethesda, MD 20814</p>
+            <p><a href="https://goo.gl/maps/R4StjY2Week6UhDBA" target="blank">Google Maps</a></p>
+        </div>
+
+    </footer>
+
+    <script src="js/toggle-menu.js"></script>
+    <script src="js/weather-api.js"></script>
+</body>
+</html>

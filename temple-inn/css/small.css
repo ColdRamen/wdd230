@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Merriweather:wght@700&display=swap');
+
+:root {
+    --primary: #264f2e;
+    --secondary: #373a36;
+    --weather: #a2ebb1;
+}
+
+/* HEADER */
+
+body {
+    margin: 0;
+}
+
+#header-box {
+    display: grid;
+    grid-template-columns: 60px 1fr 60px;
+    grid-template-rows: 130px;
+}
+
+#hamburger-btn {
+    width: 40px;
+    height: 40px;
+    margin-left: 1em;
+    align-self: center;
+    justify-self: center;
+    border: none;
+    font-size: 18pt;
+    font-weight: bold;
+    background-color: white;
+}
+
+#primary-logo {
+    justify-self: center;
+    align-self: center;
+}
+
+#primary-logo img {
+    width: 175px;
+}
+
+#hamburger-btn span:nth-child(1){display: block;}
+#hamburger-btn span:nth-child(2) {display: none;}
+
+#hamburger-btn.open span:nth-child(1){display: none;}
+#hamburger-btn.open span:nth-child(2) {display: block;}
+
+#primary-nav {
+    display: none;
+    font-family: 'Merriweather', serif;
+}
+
+#primary-social {
+    display: none;
+}
+
+#primary-reserve-btn {
+    display: none;
+}
+
+#dropdown-nav {
+    display: none;
+}
+
+#dropdown-nav ul {
+    font-family: 'Merriweather', serif;
+    list-style: none;
+    line-height: 3em;
+    padding-inline-start: 40px;
+    margin-block-end: 0;
+    font-size: 19pt;
+}
+
+#dropdown-nav ul li a{
+    margin-left: 0;
+}
+
+#dropdown-nav.open {
+    display: block;
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    padding-bottom: 1em;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 20px 25px -5px, rgba(0, 0, 0, 0.1) 0px 10px 10px -5px;
+    z-index: 2;
+}
+
+nav ul a {
+    position: relative;
+    text-decoration: none;
+    color: black;
+    margin: 1em;
+    padding-bottom: .2em;
+  }
+  
+#dropdown-nav ul a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #000000;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+  
+#dropdown-nav ul a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+#dropdown-reserve-btn {
+    background-color: var(--primary);
+    border: none;
+    color: white;
+    display: block;
+    margin: 1em 40px;
+    font-size: 16pt;
+    padding: .7em 1.5em;
+}
+
+#dropdown-social {
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+#dropdown-social img {
+    width: 45px;
+}
+
+#dropdown-social a:nth-child(2) img {
+    margin-left: 15px;
+}
+
+/* MAIN --index.html */
+
+ul, p, button {
+    font-family: 'Lato', sans-serif;
+}
+
+h2, h3 {
+    font-family: 'Merriweather', serif;
+}
+
+#home-main h3 {
+    text-align: center;
+    font-size: 15.5pt;
+}
+
+#home-main p {
+    text-align: center;
+    font-size: 14pt;
+    width: 90%;
+    margin: auto auto;
+}
+
+#home-main button {
+    background-color: var(--primary);
+    border: none;
+    color: white;
+    display: block;
+    margin: 2em auto;
+    font-size: 16pt;
+    padding: .7em 1.5em;
+}
+
+#home-slideshow-box {
+    position: relative;
+}
+
+.home-slide:nth-child(2), .home-slide:nth-child(3), .home-slide:nth-child(4) {
+    display: none;
+}
+
+#home-slideshow-box img {
+    width: 101%;
+    margin: auto auto;
+}
+
+#home-slideshow-box h2 {
+    font-size: 16pt;
+    display: block;
+    background-image: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.6));
+    color: white;
+    position: absolute;
+    bottom: 4px;
+    margin: 0 auto;
+    padding: 1em;
+    width: 95%;
+}
+
+#home-slideshow-box #small-reserve-btn {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    font-family: 'Merriweather', serif;
+    font-size: 14pt;
+    padding: .7em 1em;
+    margin: 0;
+    margin-top: .5em;
+}
+
+#home-slideshow-box #small-reserve-btn:active {
+    background-color: #387043;
+}
+
+#home-main button:active {
+    background-color: #387043;
+}
+
+#home-temple-img, #home-services-img, #home-spotlight-img {
+    display: block;
+    width: 90%;
+    margin: 3em auto;
+    border-radius: 7px;
+}
+
+#home-spotlight-box {
+    margin-top: 2em;
+}
+
+#home-spotlight-box img#home-spotlight-img {
+    margin: 0 auto;
+}
+
+#home-spotlight-box p {
+    margin-top: 1.25em;
+}
+
+#home-services-box ul {
+    margin: 1em auto;
+    font-size: 14pt;
+    width: 85%;
+}
+
+#home-services-box ul li {
+    margin-top: .6em;
+}
+
+#current-weather-box, #forecast-box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 85%;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    gap: 20px;
+    padding: 1em;
+}
+
+#current-weather-box h3, #forecast-box h3 {
+    grid-column: span 3;
+    margin: .5em;
+}
+
+img#current-weather-icon {
+    justify-self: right;
+}
+
+p#current-weather-desc {
+    font-style: italic;
+}
+
+p#current-weather-temp {
+    text-align: left;
+}
+
+#forecast-box {
+    background-color: var(--primary);
+    color: white;
+    margin-top: 2em;
+    width: 100%;
+    padding: 0;
+    padding-bottom: 1em;
+}
+
+
+/* MAIN --temples.html */
+
+#temple-cards section {
+    width: 75%;
+    margin: 3em auto;
+    padding: 1.75em;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 7px 20px 0px;
+}
+
+#temple-cards section img {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+#temple-cards section p, #temple-cards section ul {
+    font-size: 13.5pt;
+}
+
+#temple-cards button {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border: none;
+}
+
+#temple-cards button.like-button img {
+    width: 100%;
+    padding: 0;
+}
+
+
+
+/* FOOTER */
+
+footer {
+    background-color: var(--secondary);
+}
+
+#footer-logo {
+    display: block;
+    margin: 0 auto;
+    padding-top: 2.5em;
+    width: 240px;
+}
+
+#footer-social {
+    width: 130px;
+    display: block;
+    margin: 0 auto;
+}
+
+#footer-social a img {
+    width: 35px;
+    margin: 12.5px;
+}
+
+#footer-contact, #footer-address {
+    width: 250px;
+    color: white;
+    font-size: 14pt;
+    margin: .5em auto;
+    padding: 1em;
+    text-align: center;
+}
+
+#footer-contact {
+    border-bottom: 2px solid white;
+}
+
+#footer-address {
+    line-height: 1.4em;
+    margin-bottom: 0;
+}
+
+#footer-address a {
+    color: white;
+}

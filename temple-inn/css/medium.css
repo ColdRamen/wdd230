@@ -1,0 +1,54 @@
+@media only screen and (min-width: 40em) {
+    
+    /* HEADER */
+
+    #header-box {
+        grid-template-columns: 120px 1fr 120px;
+    }
+
+    #dropdown-social {
+        display: none;
+    }
+
+    #primary-social {
+        align-self: center;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #primary-social img {
+        width: 45px;
+    }
+
+    /* MAIN --index.html */
+
+    #home-main h3 {
+        font-size: 18pt;
+    }
+
+    #home-main p, #home-main ul {
+        font-size: 16pt;
+    }
+
+    #current-weather-box {
+        width: 60%;
+        gap: 10px;
+    }
+
+    /* MAIN --temples.html */
+
+    #temple-cards section img {
+        width: 320px;
+        float: right;
+        padding: 1em;
+    }
+
+    #temple-cards section ul li {
+        margin-top: .5em;
+    }
+
+    /* FOOTER */
+
+    
+
+}

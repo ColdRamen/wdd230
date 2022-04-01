@@ -1,0 +1,49 @@
+{
+    "temples" : [
+        {
+            "id" : 1,
+            "name" : "Nauvoo Illinois Temple",
+            "image": "images/temple-page-nauvoo.webp",
+            "address" : "50 N Wells St Nauvoo IL 62354",
+            "phone" : "(1) 217-453-6252",
+            "services": ["Clothing rental available", "No cafeteria available", "No patron housing available", "No distribution center nearby"],
+            "schedule" : "By Appointment Only",
+            "closures" : ["Monday, 28 Mar 2022 - Monday, 23 May 2022", "Monday, 26 Sep 2022 - Monday, 24 Oct 2022", "Thursday, 24 Nov 2022", "Saturday, 24 Dec 2022", "Saturday, 31 Dec 2022"]
+        },
+
+        {
+            "id" : 2,
+            "name" : "Philadelphia Pennsylvania Temple",
+            "image": "images/temple-page-philadelphia.webp",
+            "address" : "1739 Vine St Philadelphia PA 19103",
+            "phone" : "(1) 215-398-3040",
+            "services": ["Clothing rental available", "No cafeteria available", "No patron housing available", "Distribution center nearby"],
+            "schedule" : "By Appointment Only",
+            "closures" : ["Monday, 21 Mar 2022 - Monday, 4 Apr 2022", "Monday, 19 Sep 2022 - Monday, 3 Oct 2022", "Wednesday, 23 Nov 2022 - Thursday, 24 Nov 2022", "Saturday, 24 Dec 2022 - Sunday, 25 Dec 2022", "Saturday, 31 Dec 2022"]
+        },
+
+        {
+            "id" : 3,
+            "name" : "San Diego California Temple",
+            "image": "images/temple-page-san-diego.webp",
+            "address" : "7474 Charmant Dr San Diego CA 92122-5000",
+            "phone" : "(1) 858-622-0991",
+            "services": ["Clothing rental available", "No cafeteria available", "No patron housing available", "Distribution center nearby"],
+            "schedule" : "By Appointment Only",
+            "closures" : ["Saturday, 2 Apr 2022", "Saturday, 1 Oct 2022", "Wednesday, 23 Nov 2022 - Thursday, 24 Nov 2022", "Saturday, 24 Dec 2022", "Saturday, 31 Dec 2022"]
+        },
+
+        {
+            "id" : 4,
+            "name" : "Washington D.C. Temple",
+            "image": "images/temple-page-washington-dc.webp",
+            "address" : "9900 Stoneybrook Dr Kensignton MD 20895-3199",
+            "phone" : "(1) 301-588-0650",
+            "services": ["Not available"],
+            "schedule" : "Closed for renovation",
+            "closures" : ["Not available"]
+        }
+
+
+    ]
+}

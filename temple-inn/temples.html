@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Temple Inn & Suites">
+    <title>Temples  | The Temple Inn & Suites</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body id="temple-body">
+    <header>
+        <div id="header-box">
+            <button id="hamburger-btn"><span>&#9776;</span><span> X</span></button>
+            <nav id="primary-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="temples.html">Temples</a></li> 
+                    <li><a href="services.html">Services</a></li>
+                </ul>
+            </nav>
+            <a id="primary-logo" href="index.html"><img src="images/logo-color.webp" alt="The Temple Inn and Suites logo"></a>
+            <div id="primary-social">
+                <a href="https://instagram.com"><img src="images/instagram-icon-black.webp" alt="instagram logo linked to instagram"></a>
+                <a href="https://facebook.com"><img src="images/facebook-icon-black.webp" alt="facebook logo linked to facebook"></a>
+            </div>
+            <button onclick="window.location.href='reserve.html';" id="primary-reserve-btn">Make a Reservation</button>
+        </div>
+        <nav id="dropdown-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="temples.html">Temples</a></li> 
+                <li><a href="services.html">Services</a></li>
+            </ul>
+            
+            <button onclick="window.location.href='reserve.html';" id="dropdown-reserve-btn">Make a Reservation</button>
+
+            <div id="dropdown-social">
+                <a href="https://instagram.com"><img src="images/instagram-icon-black.webp" alt="instagram logo linked to instagram"></a>
+                <a href="https://facebook.com"><img src="images/facebook-icon-black.webp" alt="facebook logo linked to facebook"></a>
+            </div>
+
+            
+        </nav>
+        
+    </header>
+
+    <main id="temple-main">
+        <div id="temple-cards"></div>
+    </main>
+
+    <footer>
+        <img id="footer-logo" src="images/logo-white.webp" alt="Logo for the Temple Inn & Suites">
+        <div id="footer-social">
+            <a href="https://instagram.com"><img src="images/instagram-icon-white.webp" alt="instagram logo linked to instagram"></a>
+            <a href="https://facebook.com"><img src="images/facebook-icon-white.webp" alt="facebook logo linked to facebook"></a>
+        </div>
+        <div id="footer-contact">
+            <p id="footer-phone">(800) 555-555</p>
+            <p id="footer-email">thetempleinn@templeinn.com</p>
+        </div>
+        <div id="footer-address">
+            <p>4800 Montgomery Ln #300<br>Bethesda, MD 20814</p>
+            <p><a href="https://goo.gl/maps/R4StjY2Week6UhDBA" target="blank">Google Maps</a></p>
+        </div>
+
+    </footer>
+
+    <script src="js/toggle-menu.js"></script>
+    <script src="js/temples.js"></script>
+    <script src="js/likes.js" defer></script>
+</body>
+</html>
