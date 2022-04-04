@@ -3,7 +3,7 @@
     /* HEADER */
 
     #header-box {
-        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-columns: 3fr 3fr 2fr 1fr;
         box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px;
     }
 
@@ -47,10 +47,20 @@
 
     #primary-social {
         justify-content: right;
+        grid-column: 4;
     }
 
     #primary-social a {
         margin-right: 25px;
+    }
+
+    .primary-reserve-btn {
+        display: block;
+        width: 55%;
+        justify-self: right;
+        height: 70px;
+        align-self: center;
+        padding: .4em;
     }
 
     /* MAIN --index.html */
@@ -230,6 +240,47 @@
         float: right;
     }
 
+    /* MAIN --reserve.html */
+
+    #reserve-main {
+        display: grid;
+        grid-template-columns: 1fr 400px;
+        max-width: 1200px;
+        width: 90%;
+    }
+
+    #reserve-form {
+        width: 70%;
+    }
+
+    #reserve-feedback-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    #reserve-feedback-box section p{
+        background-color: var(--primary);
+        border-radius: 0px 20px;
+        color: white;
+        font-size: 20pt;
+        font-style: italic;
+        text-align: center;
+        padding: 3.5em .5em;
+    }
+
+    #reserve-feedback-box section:nth-child(2) p {
+        background-color: var(--secondary);
+        border-radius: 20px 0px;
+    }
+
+    /* MAIN --confirmation.html */
+
+    #confirmation-main section {
+        width: 50%;
+        margin: 11em auto;
+    }
+
     /* FOOTER */
 
     footer {
@@ -271,4 +322,8 @@
         margin: .5em auto;
     }
     
+    footer > p {
+        grid-column: 2 / 4;
+        font-size: 15pt;
+    }
 }

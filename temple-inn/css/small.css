@@ -54,10 +54,6 @@ body {
     display: none;
 }
 
-#primary-reserve-btn {
-    display: none;
-}
-
 #dropdown-nav {
     display: none;
 }
@@ -112,7 +108,7 @@ nav ul a {
     transform: scaleX(1);
 }
 
-#dropdown-reserve-btn {
+.dropdown-reserve-btn, .primary-reserve-btn {
     background-color: var(--primary);
     border: none;
     color: white;
@@ -120,6 +116,10 @@ nav ul a {
     margin: 1em 40px;
     font-size: 16pt;
     padding: .7em 1.5em;
+}
+
+.primary-reserve-btn {
+    display: none;
 }
 
 #dropdown-social {
@@ -307,7 +307,68 @@ p#current-weather-temp {
     padding: 0;
 }
 
+/* MAIN --reserve.html */
 
+#reserve-main {
+    margin: 3em auto;
+}
+
+#reserve-form {
+    width: 75%;
+    margin: 0 auto;
+    padding: 1.75em;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 7px 20px 0px;
+}
+
+#reserve-form h3 {
+    margin-top: 3em;
+    margin-bottom: .5em;
+}
+
+#reserve-form label, #reserve-form button {
+    font-family: 'Lato', sans-serif;
+    font-size: 14pt;
+    margin-top: .5em;
+    padding: .5em 0;
+    display: inline-block;
+}
+
+#reserve-form input {
+    padding: .3em 0;
+    font-family: 'Lato', sans-serif;
+}
+
+#reserve-form button {
+    padding: .75em 1.5em;
+    border: none;
+    background-color: var(--primary);
+    color: white;
+    border-radius: 6px;
+}
+
+.indicates-required {
+    font-style: italic;
+}
+
+#reserve-feedback-box {
+    display: none;
+}
+
+/* MAIN --confirmation.html */
+
+#confirmation-main section {
+    background-color: var(--primary);
+    color: white;
+    width: 80%;
+    margin: 3em auto;
+    padding: 1.75em;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 7px 20px 0px;
+    text-align: center;
+}
+
+#confirmation-main section p {
+    font-size: 16pt;
+}
 
 /* FOOTER */
 
@@ -353,4 +414,12 @@ footer {
 
 #footer-address a {
     color: white;
+}
+
+footer > p {
+    color: white;
+    font-size: 13pt;
+    text-align: center;
+    margin-bottom: 0;
+    padding: 2em;
 }

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Temple Inn & Suites">
+    <title>Reserve  | The Temple Inn & Suites</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body id="temple-body">
+    <header>
+        <div id="header-box">
+            <button id="hamburger-btn"><span>&#9776;</span><span> X</span></button>
+            <nav id="primary-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="temples.html">Temples</a></li> 
+                    <li><a href="services/services.html">Services</a></li>
+                </ul>
+            </nav>
+            <a id="primary-logo" href="index.html"><img src="images/logo-color.webp" alt="The Temple Inn and Suites logo"></a>
+
+            <div id="primary-social">
+                <a href="https://instagram.com"><img src="images/instagram-icon-black.webp" alt="instagram logo linked to instagram"></a>
+                <a href="https://facebook.com"><img src="images/facebook-icon-black.webp" alt="facebook logo linked to facebook"></a>
+            </div>
+        </div>
+        <nav id="dropdown-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="temples.html">Temples</a></li> 
+                <li><a href="services/services.html">Services</a></li>
+            </ul>
+
+            <div id="dropdown-social">
+                <a href="https://instagram.com"><img src="images/instagram-icon-black.webp" alt="instagram logo linked to instagram"></a>
+                <a href="https://facebook.com"><img src="images/facebook-icon-black.webp" alt="facebook logo linked to facebook"></a>
+            </div>
+
+            
+        </nav>
+        
+    </header>
+
+    <main id="reserve-main">
+        <form id="reserve-form" method="get" action="confirmation.html">
+            <h2>Reserve Your Stay</h2>
+
+            <h3>Location*:</h3>
+            <input type="radio" id="reserve-nauvoo" name="temple-choice" value="Nauvoo, Illinois">
+            <label for="reserve-nauvoo">Nauvoo, Illinois</label><br>
+            <input type="radio" id="reserve-philadelphia" name="temple-choice" value="Philadelphia, Pennsylvania">
+            <label for="reserve-philadelphia">Philadelphia, Pennsylvania</label><br>
+            <input type="radio" id="reserve-san-diego" name="temple-choice" value="San Diego, California">
+            <label for="reserve-san-diego">San Diego, California</label><br>
+            <input type="radio" id="reserve-washington-dc" name="temple-choice" value="Washington D.C.">
+            <label for="reserve-washington-dc">Washington D.C.</label><br>
+
+            <h3>Dates:</h3>
+            <label for="reserve-arrival">Arrival*: </label><br>
+            <input type="date" id="reserve-arrival" name="dates" required><br>
+            <label for="reserve-departure">Departure*: </label><br>
+            <input type="date" id="reserve-departure" name="dates" required><br>
+
+            <h3>Personal Info:</h3>
+            <label for="reserve-name">Full Name*:<br>
+            <input type="text" id="reserve-name" name="reserve-name" required></label><br>
+            <label for="reserve-email">Email*:<br>
+            <input type="email" id="reserve-email" name="reserve-email" placeholder="example@example.com" required></label><br>
+            <label for="reserve-phone">Phone*:<br>
+            <input type="tel" id="reserve-phone" name="reserve-phone" placeholder="555-555-5555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Use the pattern 555-555-5555." required></label><br>
+            <label for="reserve-home">Home State or Country:<br>
+            <input type="text" id="reserve-home" name="reserve-home"></label><br>
+            <label for="reserve-comments">Special Accomodations and/or Comments:<br>
+            <textarea id="reserve-comments" name="reserve-comments"></textarea></label><br>
+
+            <button type="submit">Reserve</button>
+            <p class="indicates-required">* indicates required</p>
+        </form>
+        <div id="reserve-feedback-box">
+            <section>
+                <p>"Our stay was amazing. We learned so much about the Nauvoo Temple!"<br>-Brittney P.</p>
+            </section>
+            <section>
+                <p>"An unforgettable experience. The hotel had such a spiritual atmosphere."<br>-Adam A.</p>
+            </section>
+            <section>
+                <p>"Thank you Temple Inn & Suites! We will definitely be back."<br>Samantha S.</p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <img id="footer-logo" src="images/logo-white.webp" alt="Logo for the Temple Inn & Suites">
+        <div id="footer-social">
+            <a href="https://instagram.com"><img src="images/instagram-icon-white.webp" alt="instagram logo linked to instagram"></a>
+            <a href="https://facebook.com"><img src="images/facebook-icon-white.webp" alt="facebook logo linked to facebook"></a>
+        </div>
+        <div id="footer-contact">
+            <p id="footer-phone">(800) 555-555</p>
+            <p id="footer-email">thetempleinn@templeinn.com</p>
+        </div>
+        <div id="footer-address">
+            <p>4800 Montgomery Ln #300<br>Bethesda, MD 20814</p>
+            <p><a href="https://goo.gl/maps/R4StjY2Week6UhDBA" target="blank">Google Maps</a></p>
+        </div>
+        <p id="footer-end">© 2022 Temple Inn & Suites | <strong>Alex Ward</strong> | WDD 230 Final Project | Last updated: <span id="last-modified"></span></p>
+    </footer>
+
+    <script src="js/toggle-menu.js"></script>
+    <script src="js/reserve-today.js"></script>
+    <script src="js/last-modified.js"></script>
+</body>
+</html>

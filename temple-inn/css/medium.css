@@ -47,8 +47,11 @@
         margin-top: .5em;
     }
 
-    /* FOOTER */
+    /* MAIN --reserve.html */
 
-    
+    #reserve-form {
+        width: 60%;
+    }
+
 
 }

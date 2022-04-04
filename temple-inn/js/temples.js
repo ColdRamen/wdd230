@@ -7,11 +7,10 @@ fetch(requestURL)
         return response.json();
     })
     .then(function (jsonObject) {
-        // console.table(jsonObject);
 
         const temples = jsonObject['temples'];
-
         temples.forEach(displayTempleCards);
+        
     });
 
 function displayTempleCards(temple) {
