@@ -23,7 +23,21 @@ fetch(forecast_apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
 
-    console.log(jsObject);
+    
+    if (typeof jsObject.alert != 'undefined') {
+      let alertBox = document.getElementById('weather-alerts');
+
+      let alert = document.createElement('p');
+      alert.textContent = `From ${jsObject.alert.sender_name}: ${jsObject.alert.event}`;
+
+      let closeAlertBtn = document.createElement('button');
+      closeAlertBtn.textContent = 'X';
+
+      alert.appendChild(closeAlertBtn);
+      alertBox.appendChild(alert);
+
+      closeAlertBtn.onclick = closeAlert;
+    }
 
     let oneDay = document.querySelector('#one-day');
     let twoDays = document.querySelector('#two-days');
@@ -74,4 +88,9 @@ function capitalize(word) {
 function myDate() {
   
   document.getElementById("myId").innerHTML = r;
+}
+
+function closeAlert() {
+  let alertBox = document.getElementById('weather-alerts');
+  alertBox.classList.add('closed');
 }
