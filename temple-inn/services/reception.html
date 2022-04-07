@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Temple Inn & Suites are the only hotels focused on Temples of the Restored Church. Reserve your stay and enhance your spiritual experience.">
+    <title>Wedding Receptions | Temple Inn & Suites</title>
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/small.css">
+    <link rel="stylesheet" href="../css/medium.css">
+    <link rel="stylesheet" href="../css/large.css">
+</head>
+<body>
+    <header>
+        <div id="header-box">
+            <button id="hamburger-btn"><span>&#9776;</span><span> X</span></button>
+            <nav id="primary-nav">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../temples.html">Temples</a></li> 
+                    <li><a href="services.html">Services</a></li>
+                </ul>
+            </nav>
+            <a id="primary-logo" href="index.html"><img src="../images/logo-color.webp" alt="The Temple Inn and Suites logo" loading="lazy"></a>
+
+            <button onclick="window.location.href='../reserve.html';" class="primary-reserve-btn">Make a Reservation</button>
+
+            <div id="primary-social">
+                <a href="https://instagram.com"><img src="../images/instagram-icon-black.webp" alt="instagram logo linked to instagram" loading="lazy"></a>
+                <a href="https://facebook.com"><img src="../images/facebook-icon-black.webp" alt="facebook logo linked to facebook" loading="lazy"></a>
+            </div>
+        </div>
+        <nav id="dropdown-nav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../temples.html">Temples</a></li> 
+                <li><a href="services.html">Services</a></li>
+            </ul>
+            
+            <button onclick="window.location.href='../reserve.html';" class="dropdown-reserve-btn">Make a Reservation</button>
+
+            <div id="dropdown-social">
+                <a href="https://instagram.com"><img src="../images/instagram-icon-black.webp" alt="instagram logo linked to instagram" loading="lazy"></a>
+                <a href="https://facebook.com"><img src="../images/facebook-icon-black.webp" alt="facebook logo linked to facebook" loading="lazy"></a>
+            </div>
+        </nav>
+        
+    </header>
+
+    <main id="reception-main">
+        
+        <h2>Reception Packages</h2>
+
+        <table id="reception-table">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Simple</th>
+                    <th>Plus</th>
+                    <th>Premium</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Venue (fits 500)</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                </tr>
+                <tr>
+                    <td>Tables/Chairs</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                </tr>
+                <tr>
+                    <td>Music access</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                </tr>
+                <tr>
+                    <td>Centerpieces</td>
+                    <td></td>
+                    <td>X</td>
+                    <td>X</td>
+                </tr>
+                <tr>
+                    <td>Decor</td>
+                    <td></td>
+                    <td>X</td>
+                    <td>X</td>
+                </tr>
+                <tr>
+                    <td>Light refreshments</td>
+                    <td></td>
+                    <td>X</td>
+                    <td>X</td>
+                </tr>
+                <tr>
+                    <td>Live band</td>
+                    <td></td>
+                    <td></td>
+                    <td>X</td>
+                </tr>
+                <tr>
+                    <td>Full catering</td>
+                    <td></td>
+                    <td></td>
+                    <td>X</td>
+                </tr>
+                <tr>
+                    <td>Reception invitations</td>
+                    <td></td>
+                    <td></td>
+                    <td>X</td>
+                </tr>
+                <tr>
+                    <td>Price</td>
+                    <td>$600</td>
+                    <td>$900</td>
+                    <td>$1300</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <form id="reception-form" method="get" action="thankyou.html">
+            <h2>Contact us below to book your reception!</h2>
+            
+            <h3>Package:</h3>
+            <input type="radio" id="reception-simple" name="package-choice" value="Simple" required>
+            <label for="reception-simple">Simple</label><br>
+            <input type="radio" id="reception-plus" name="package-choice" value="Plus" required>
+            <label for="reception-plus">Plus</label><br>
+            <input type="radio" id="reception-premium" name="package-choice" value="Premium" required>
+            <label for="reception-premium">Premium</label><br>
+
+            <h3>Contact Info:</h3>
+            <label for="reception-name">Full Name*:<br>
+            <input type="text" id="reception-name" name="reception-name" required></label><br>
+            <label for="reception-email">Email*:<br>
+            <input type="email" id="reception-email" name="reception-email" placeholder="example@example.com" required></label><br>
+            <label for="reception-comments">Comments/Questions:<br>
+            <textarea id="reception-comments" name="reception-comments"></textarea></label><br>
+
+            <button type="submit">Book now</button>
+            <p class="indicates-required">* indicates required</p>
+        </form>
+    </main>
+
+    <footer>
+        <img id="footer-logo" src="../images/logo-white.webp" alt="Logo for the Temple Inn & Suites" loading="lazy">
+        <div id="footer-social">
+            <a href="https://instagram.com"><img src="../images/instagram-icon-white.webp" alt="instagram logo linked to instagram" loading="lazy"></a>
+            <a href="https://facebook.com"><img src="../images/facebook-icon-white.webp" alt="facebook logo linked to facebook" loading="lazy"></a>
+        </div>
+        <div id="footer-contact">
+            <p id="footer-phone">(800) 555-555</p>
+            <p id="footer-email">thetempleinn@templeinn.com</p>
+        </div>
+        <div id="footer-address">
+            <p>4800 Montgomery Ln #300<br>Bethesda, MD 20814</p>
+            <p><a href="https://goo.gl/maps/R4StjY2Week6UhDBA" target="blank">Google Maps</a></p>
+        </div>
+
+        <p id="footer-end">© 2022 Temple Inn & Suites | <strong>Alex Ward</strong> | WDD 230 Final Project | Last updated: <span id="last-modified"></span></p>
+    </footer>
+
+    <script src="../js/toggle-menu.js"></script>
+    <script src="../js/last-modified.js"></script>
+</body>
+</html>

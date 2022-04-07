@@ -253,13 +253,21 @@
         width: 70%;
     }
 
+    #reserve-form label {
+        width: 80%;
+    }
+
+    #reserve-form label input, textarea{
+        width: 80%;
+    }
+
     #reserve-feedback-box {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
     }
 
-    #reserve-feedback-box section p{
+    #reserve-feedback-box div p { 
         background-color: var(--primary);
         border-radius: 0px 20px;
         color: white;
@@ -269,16 +277,131 @@
         padding: 3.5em .5em;
     }
 
-    #reserve-feedback-box section:nth-child(2) p {
+    #reserve-feedback-box div:nth-child(2) p {
         background-color: var(--secondary);
         border-radius: 20px 0px;
     }
 
-    /* MAIN --confirmation.html */
+    /* MAIN --confirmation.html --thankyou.html */
 
-    #confirmation-main section {
+    #confirmation-main section, #thankyou-main section {
         width: 50%;
         margin: 11em auto;
+    }
+
+    /* MAIN --services.html */
+
+    #services-main {
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+
+    #services-cover img {
+        width: 100%;
+        max-width: 900px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    #services-wedding-box {
+        padding: 2em 9.5em;
+    }
+
+    #services-main h2 {
+        font-size: 21pt;
+    }
+
+    #services-main p, #services-main li {
+        font-size: 16.5pt;
+    }
+
+    #services-main button {
+        font-size: 15.5pt;
+    }
+
+    #services-kitchenette img {
+        width: 600px;
+        float: left;
+        margin-left: 2%;
+    }
+
+    #services-missionary-box {
+        margin: 2.5em 0;
+        padding: 3em;
+        padding-left: 65%;
+    }
+
+    #services-columns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+    }
+
+    #services-columns section {
+        padding: 0;
+        margin: 0;
+    }
+
+    #services-amenities-box {
+        margin-top: 0;
+    }
+
+    #services-columns button {
+        grid-column: span 2;
+    }
+
+    /* MAIN --reception.html */
+
+    #reception-main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 1400px;
+        margin: 2em auto;
+    }
+
+    #reception-main h2 {
+        padding: 0;
+        margin-bottom: 0;
+    }
+
+    #reception-table {
+        width: 100%;
+        margin: 2em auto;
+        grid-row: 2;
+    }
+
+    #reception-table thead th:first-child  {
+        border-radius: 10px 0 0 0;
+    }
+
+    #reception-table thead th:last-child  {
+        border-radius: 0 10px 0 0;
+    }
+
+    #reception-form {
+        grid-row: 2;
+    }
+
+    /* MAIN --missionaries.html */
+
+    #missionaries-main {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    #missionaries-main h2 {
+        font-size: 20pt;
+        margin-top: 2em;
+    }
+
+    #missionaries-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #missionaries-cards h3 {
+        font-size: 17pt;
     }
 
     /* FOOTER */

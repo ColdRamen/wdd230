@@ -5,14 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="The Temple Inn & Suites are the only hotels focused on Temples of the Restored Church. Reserve your stay and enhance your spiritual experience.">
-    <title>Services | The Temple Inn & Suites</title>
+    <title>Long-term Suites | Temple Inn & Suites</title>
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/small.css">
     <link rel="stylesheet" href="../css/medium.css">
     <link rel="stylesheet" href="../css/large.css">
 </head>
-
 <body>
     <header>
         <div id="header-box">
@@ -40,7 +39,7 @@
                 <li><a href="services.html">Services</a></li>
             </ul>
             
-            <button onclick="window.location.href='reserve.html';" class="dropdown-reserve-btn">Make a Reservation</button>
+            <button onclick="window.location.href='../reserve.html';" class="dropdown-reserve-btn">Make a Reservation</button>
 
             <div id="dropdown-social">
                 <a href="https://instagram.com"><img src="../images/instagram-icon-black.webp" alt="instagram logo linked to instagram" loading="lazy"></a>
@@ -50,59 +49,66 @@
         
     </header>
 
-    <main id="services-main">
-        <picture id="services-cover">
-            <source media="(min-width: 59.375em)" srcset="../images/wedding-large.webp">
-            <source media="(min-width: 40em)" srcset="../images/wedding-medium.webp">
-            <img src="../images/wedding-small.webp" alt="Photo of a bride and groom" loading="lazy">
-        </picture>
+    <main id="missionaries-main">
 
-        <section id="services-wedding-box">
-            <h2>Leave the wedding stress to us.</h2>
-            <p>
-                Your special day should be just that: special, not stressful. Make your wedding reception convenient and memorable by choosing 
-                our beautiful venue. We also include optional catering and setup for even less headache.
-            </p>
-            <button onclick="window.location.href='reception.html';">Book your reception!</button>
-        </section>
+        <h2>Long-term Suites for Temple Missionaries</h2>
 
-        <picture id="services-kitchenette">
-            <source media="(min-width: 40em)" srcset="../images/kitchenette-medium.webp">
-            <img src="../images/kitchenette-small.webp" alt="Photo of a hotel room kitchenette" loading="lazy">
-        </picture>
+        <div id="missionaries-cards">
 
-        <section id="services-missionary-box">
-            <h2>Are you a full-time temple missionary?</h2>
-            <p>We provide long-term suite options at a discounted price for temple missionaries.</p>
-            <button onclick="window.location.href='missionaries.html';">View suite options</button>
-        </section>
-
-        <div id="services-columns">
-            <section id="services-list-box">
-                <h2>Our unique services</h2>
+            <section>
+                <h3>3 Months</h3>
+                <img src="../images/three-month-kitchen.webp" alt="Small kitchen as part of a long-term suite" loading="lazy">
                 <ul>
-                    <li>Free access to changing rooms/bathroom facilities for temple patrons</li>
-                    <li>A playroom and low-cost, short-term babysitting services for the children of patrons</li>
-                    <li>Themed lobby and sitting area unique to each temple</li>
-                    <li>A family search center where guests can find temple names, family history consulation included</li>
-                    <li>Visitor center with information about temples and the Church of Jesus Christ of Latter-day Saints</li>
+                    <li>500 square feet</li>
+                    <li>Oven/Stove</li>
+                    <li>Washer/Dryer</li>
+                    <li>Cooking Dishes and Utensils</li>
+                    <li>$350/month</li>
                 </ul>
             </section>
 
-            <section id="services-amenities-box">
-                <h2>Free amenities</h2>
+            <section>
+                <h3>6 Months</h3>
+                <img src="../images/kitchenette-medium.webp" alt="Medium kitchen as part of a long-term suite" loading="lazy">
                 <ul>
-                    <li>Breakfast</li>
-                    <li>Exercise/workout room</li>
-                    <li>Indoor pool</li>
-                    <li>High speed WiFi access</li>
-                    <li>Parking</li>
-                    <li>Temple shuttle</li>
+                    <li>600 square feet</li>
+                    <li>Oven/Stove</li>
+                    <li>Washer/Dryer</li>
+                    <li>Cooking Dishes and Utensils</li>
+                    <li>4-person dining area</li>
+                    <li>$400/month</li>
                 </ul>
             </section>
 
-            <button id="services-reserve-btn" onclick="window.location.href='../reserve.html';">Make a reservation!</button>
+            <section>
+                <h3>1 year</h3>
+                <img src="../images/one-year-kitchen.webp" alt="Large kitchen as part of a long-term suite" loading="lazy">
+                <ul>
+                    <li>800 square feet</li>
+                    <li>Oven/Stove</li>
+                    <li>Washer/Dryer</li>
+                    <li>Dishwasher</li>
+                    <li>Wide Fridge/Freezer</li>
+                    <li>Cooking Dishes and Utensils</li>
+                    <li>$600/month</li>
+                </ul>
+            </section>
+
+            <form id="missionaries-form" method="get" action="thankyou.html">
+                <h3>Contact us to reserve a long-term suite.</h3>
+    
+                <label for="missionaries-name">Full Name*:<br>
+                <input type="text" id="missionaries-name" name="missionaries-name" required></label><br>
+                <label for="missionaries-email">Email*:<br>
+                <input type="email" id="missionaries-email" name="missionaries-email" placeholder="example@example.com" required></label><br>
+                <label for="missionaries-comments">Comments/Questions:<br>
+                <textarea id="missionaries-comments" name="missionaries-comments"></textarea></label><br>
+    
+                <button type="submit">Send</button>
+                <p class="indicates-required">* indicates required</p>
+            </form>
         </div>
+
     </main>
 
     <footer>

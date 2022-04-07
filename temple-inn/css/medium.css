@@ -53,5 +53,11 @@
         width: 60%;
     }
 
+    /* MAIN --reception.html */
+
+    #reception-main h2 {
+        font-size: 21pt;
+    }
+
 
 }

@@ -380,9 +380,9 @@ p#current-weather-temp {
     display: none;
 }
 
-/* MAIN --confirmation.html */
+/* MAIN --confirmation.html --thankyou.html */
 
-#confirmation-main section {
+#confirmation-main section, #thankyou-main section {
     background-color: var(--primary);
     color: white;
     width: 80%;
@@ -392,9 +392,167 @@ p#current-weather-temp {
     text-align: center;
 }
 
-#confirmation-main section p {
+#confirmation-main section p, #thankyou-main section p {
     font-size: 16pt;
 }
+
+/* MAIN --services.html */
+
+#services-cover img, #services-kitchenette img {
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 9px;
+}
+
+#services-wedding-box, #services-missionary-box {
+    padding: 2em;
+    margin: .4em auto;
+}
+
+#services-wedding-box p, #services-missionary-box p {
+    font-size: 15pt;
+}
+
+#services-main button{
+    background-color: var(--primary);
+    color: white;
+    font-size: 13.5pt;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    padding: .75em 1.5em;
+}
+
+#services-missionary-box button {
+    background-color: white;
+    color: var(--primary);
+}
+
+#services-missionary-box {
+    color: white;
+    background-color: var(--primary);
+    text-align: right;
+    margin-top: -7px;
+}
+
+#services-columns {
+    margin-bottom: 3em;
+    padding: 2em;
+}
+
+#services-amenities-box {
+    margin-top: 3em;
+}
+
+#services-main li {
+    font-size: 14.75pt;
+    margin-top: .45em;
+}
+
+#services-reserve-btn {
+    margin-top: 1.5em;
+}
+
+/* MAIN --reception.html */
+
+#reception-main h2 {
+    padding: 1em;
+    text-align: center;
+}
+
+#reception-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 13pt;
+    font-family: 'Lato', sans-serif;
+    width: 100%;
+}
+
+#reception-table thead tr {
+    background-color: var(--primary);
+    color: white;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-size: 16pt;
+}
+
+#reception-table td, #reception-table th {
+    padding: 1em .5em;
+}
+
+#reception-table tbody td:nth-child(2), #reception-table tbody td:nth-child(3), #reception-table tbody td:nth-child(4) {
+    color: var(--primary);
+    font-weight: bold;
+    text-align: center;
+}
+
+#reception-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+#reception-table tbody tr:last-of-type {
+    font-weight: bold;
+}
+
+#reception-form, #missionaries-form {
+    width: 75%;
+    margin: 4em auto;
+    padding: 1.75em;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 7px 20px 0px;
+}
+
+#reception-form h3, #missionaries-form h2 {
+    margin-top: 3em;
+    margin-bottom: .5em;
+}
+
+#reception-form label, #reception-form button, #missionaries-form label, #missionaries-form button {
+    font-family: 'Lato', sans-serif;
+    font-size: 14pt;
+    margin-top: .5em;
+    padding: .5em 0;
+    display: inline-block;
+}
+
+#reception-form input, #missionaries-form input {
+    padding: .3em 0;
+    font-family: 'Lato', sans-serif;
+}
+
+#reception-form button, #missionaries-form button {
+    padding: .75em 1.5em;
+    border: none;
+    background-color: var(--primary);
+    color: white;
+    border-radius: 6px;
+}
+
+/* MAIN --missionaries.html */
+
+#missionaries-main h2 {
+    text-align: center;
+}
+
+#missionaries-main section {
+    padding: 1.5em;
+}
+
+#missionaries-main img {
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 6px 8px;
+}
+
+#missionaries-main ul {
+    background-color: var(--primary);
+    color: white;
+    padding: 2em;
+    margin-top: -1em;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 6px 8px;
+}
+
+#missionaries-main li {
+    font-size: 15pt;
+}
+
 
 /* FOOTER */
 
