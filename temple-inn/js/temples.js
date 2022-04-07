@@ -62,9 +62,11 @@ function displayTempleCards(temple) {
 
 
     likeButtonEmpty.setAttribute('src', 'images/thumbs-up-empty.webp');
+    likeButtonEmpty.setAttribute('alt', 'Empty thumbs up icon')
     likeButtonEmpty.setAttribute('class', 'like-button-img');
 
     likeButtonFilled.setAttribute('src', 'images/thumbs-up-filled.webp');
+    likeButtonFilled.setAttribute('alt', 'Filled in thumbs up icon')
     likeButtonFilled.setAttribute('class', 'like-button-img');
 
     likeButton.setAttribute('class', 'like-button');
